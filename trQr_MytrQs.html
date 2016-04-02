@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<link href="trQr_MytrQs.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
+		<script src="trQr_MytrQs.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body>
+
+		<div class="page-header">
+			<button class="button-menu" type="button">
+				<div class="menu-line"></div>
+				<div class="menu-line"></div>
+				<div class="menu-line"></div>
+			</button>
+			my trQs
+			<button class="button-addtrQ" type="button">
+				<div class="vertical-line"></div>
+				<div class="horizontal-line"></div>
+			</button>
+		</div>
+
+		<div class="page-body">
+			<div class="trQ-all divHide">
+				<div class="container-trQ">
+					<div class="header-trQ">
+						<div class="trQ-name"></div>
+					</div>
+					<div class="body-trQ">
+						<div class="progress-container">
+							<div class="progress-done"></div>
+							<div class="progress-current"></div>
+							<div class="progress-togo"></div>
+							<div class="progress-mark divHide"></div>
+						</div>
+					</div>
+					<div class="footer-trQ">
+						<div class="trQ-newPost trQ-inputText" contenteditable="true" data-placeholder="hows your trQ coming?!" onkeypress="return (this.innerText.length >= 175 ? false : true )" spellcheck="true"></div>
+						<div class="trQ-newValue trQ-inputText" contenteditable="true" data-placeholder="value" onkeypress="return (this.innerText.length >= 9 ? false : true )"></div>
+						<div class="trQ-newUnit trQ-inputText">unit</div>
+						<button class="trQ-post" type="button">post</button>
+					</div>
+				</div>
+				<div class="post-container">
+					<div class="post-box divHide">
+						<div class="post-date"></div>
+						<div class="post-text"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-container divHide">
+			<div class="modal-header">new trQ details...</div>
+			<div class="modal-body">
+				<div class="modal-trQ-title trQ-inputText" contenteditable="true" data-placeholder="title" onkeypress="return(this.innerText.length>=30?false:true)" spellcheck="true"></div>
+				<div class="modal-trQ-start trQ-inputText" contenteditable="true" data-placeholder="start value" onkeypress="return(this.innerText.length>=9?false:true)" spellcheck="true"></div>
+				<div class="modal-trQ-end trQ-inputText" contenteditable="true" data-placeholder="end value" onkeypress="return(this.innerText.length>=9?false:true)" spellcheck="true"></div>
+				<div class="modal-trQ-units trQ-inputText" contenteditable="true" data-placeholder="units" onkeypress="return(this.innerText.length>=11?false:true)" spellcheck="true"></div>
+			</div>
+			<div class="modal-footer">
+				<button class="modal-submit" type="button">submit</button>
+			</div>
+		</div>
+		<div class="modal-overlay divHide"></div>
+
+	</body>
+</html>
